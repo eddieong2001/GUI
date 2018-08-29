@@ -1,0 +1,17 @@
+temperature_line_setting_save_cfg	Default
+spinner_indoor_temp_line_0	Disable
+spinner_indoor_temp_line_1	Disable
+spinner_indoor_temp_line_2	Disable
+spinner_indoor_temp_line_3	Disable
+spinner_indoor_temp_line_4	Disable
+spinner_indoor_temp_line_5	Disable
+spinner_indoor_temp_line_6	Disable
+spinner_indoor_temp_line_7	Disable
+spinner_outdoor_temp_line_0	0
+spinner_outdoor_temp_line_1	1
+spinner_outdoor_temp_line_2	2
+spinner_outdoor_temp_line_3	Disable
+spinner_outdoor_temp_line_4	Disable
+spinner_outdoor_temp_line_5	Disable
+spinner_outdoor_temp_line_6	Disable
+spinner_outdoor_temp_line_7	Disable

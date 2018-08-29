@@ -1,0 +1,57 @@
+##########################################
+# Start 壓縮機 EEV 風扇 角度 Scale: 依所填入的參數開始運轉，參數間請用空白分隔
+# 不想運轉壓縮機、EEV、風扇，請在該欄位填入N/A
+
+# Stop: 停止運轉
+
+# Set: 壓縮機 EEV 風扇 角度 Scale: 依所填入的參數執行Set Command，參數間請用空白分隔
+# 欄位若不做修改請輸入 hold
+
+# Sleep 秒數
+
+#參數名稱
+#_壓縮機_參數, _EEV_參數, _風扇_參數, _角度_參數, _Scale_參數
+
+#Report名稱
+#_壓縮機轉速_結果, _EEV_結果, _風扇轉速_結果, _IPM_結果, _壓縮機電流_結果, _風扇電流_結果, _Scale_結果
+
+# if 條件
+# ...
+# elif 條件
+# ...
+# else
+# ...
+
+#eval(): if statement中做四則運算
+
+# 請用Tab做縮排
+
+##########################################
+
+Calc _風扇_參數 795
+Calc _壓縮機_參數 50
+
+LoopStrt
+
+if _totalCnt < 1000
+
+	Start hold N/A hold hold hold
+
+	Sleep 10
+	Get
+	Calc _totalCnt _totalCnt+1
+	if _風扇電流_結果 > 0.7
+		Calc _failCnt _failCnt+1
+		Stop
+		Save
+		Sleep 10
+	else
+		Calc _passCnt _passCnt+1
+		Stop
+		Save
+		Sleep 40
+
+else
+	END
+
+LoopEnd

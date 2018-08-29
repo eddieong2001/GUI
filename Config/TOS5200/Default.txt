@@ -1,0 +1,13 @@
+tos5200_setting_save_cfg	Default
+tos5200_config_frequency	60
+tos5200_config_voltage_test	220
+tos5200_config_voltage_limit	1000
+tos5200_config_current_limit_upper	110
+tos5200_config_current_limit_lower_active	True
+tos5200_config_current_limit_lower	0.01
+tos5200_config_test_time_active	True
+tos5200_config_test_time	2.0
+tos5200_config_voltage_rise_time	2.0
+tos5200_config_voltage_fall_time	Enabled
+tos5200_config_start_voltage	Disabled
+tos5200_config_meas_mode	RMS

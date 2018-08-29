@@ -1,0 +1,6 @@
+environment_setting_name	Default
+environment_calculation	Cooling
+environment_indoor_dry	27.00
+environment_indoor_wet	19.00
+environment_outdoor_dry	35.00
+environment_outdoor_wet	24.00
